@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mie Ayam Mas Londo Jenggot – Bandung, Pesan Online</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="tugas1.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#atas">Mie Ayam Mas Londo Jenggot</a>
+    <nav aria-label="Menu utama"><a href="#menu">Menu</a><a href="#testi">Ulasan</a><a href="#faq">Tanya jawab</a><a href="#info">Info toko</a></nav>
+    <button class="cart-btn" id="openCart" type="button">Pesanan <span id="badge">0</span></button>
+  </div>
+</header>
+
+<main id="atas">
+<section class="hero-band"><div class="wrap hero">
+  <div>
+    <h1>Mie ayam hangat dengan topping melimpah di Bandung</h1>
+    <p class="lead">Pilih dari 15 menu, atur jumlahnya, lalu kirim pesanan lewat WhatsApp. Diantar atau ambil sendiri di resto.</p>
+    <div class="cta"><a class="btn light" href="#menu">Pesan sekarang</a><a class="btn outline-light" href="#info">Jam buka dan alamat</a></div>
+  </div>
+  <div class="hero-side" id="heroSide"></div>
+</div></section>
+
+<section class="strip"><div class="wrap"><ul class="facts">
+  <li><strong>30–45 menit</strong>Estimasi antar di sekitar Batununggal</li>
+  <li><strong>Dimasak saat dipesan</strong>Mie dan topping disiapkan segar</li>
+  <li><strong>COD tersedia</strong>Bayar tunai ke kurir saat pesanan tiba</li>
+</ul></div></section>
+
+<section id="menu" class="band"><div class="wrap">
+  <h2>Menu</h2>
+  <div class="toolbar"><div class="tabs" id="tabs" role="group" aria-label="Kategori menu"></div>
+  <input class="search" id="q" type="search" placeholder="Cari menu, contoh: ayam" aria-label="Cari menu"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="testi" class="wrap">
+  <h2>Kata pelanggan</h2>
+  <p class="rating-ringkas" id="ringkasUlasan"></p>
+  <div class="quotes" id="testiGrid"></div>
+  <form class="review-form" id="reviewForm" novalidate>
+    <h3>Tulis ulasan Anda</h3>
+    <div class="rf-row">
+      <div><label for="rNama">Nama</label><input id="rNama" autocomplete="name"><p class="err" id="e-rNama"></p></div>
+      <div><label for="rMenu">Menu</label><select id="rMenu"></select></div>
+    </div>
+    <div><label id="lblBintang">Penilaian</label>
+      <div class="stars-input" role="radiogroup" aria-labelledby="lblBintang">
+        <input type="radio" name="bintang" id="s5" value="5"><label for="s5" title="5 bintang">★</label>
+        <input type="radio" name="bintang" id="s4" value="4"><label for="s4" title="4 bintang">★</label>
+        <input type="radio" name="bintang" id="s3" value="3"><label for="s3" title="3 bintang">★</label>
+        <input type="radio" name="bintang" id="s2" value="2"><label for="s2" title="2 bintang">★</label>
+        <input type="radio" name="bintang" id="s1" value="1"><label for="s1" title="1 bintang">★</label>
+      </div><p class="err" id="e-rBintang"></p></div>
+    <div><label for="rTeks">Ulasan</label><textarea id="rTeks" placeholder="Ceritakan pengalaman Anda"></textarea><p class="err" id="e-rTeks"></p></div>
+    <button class="btn" type="submit">Kirim ulasan</button>
+    <p id="rNote" role="status"></p>
+  </form>
+</section>
+
+<section id="faq" class="band"><div class="wrap narrow">
+  <h2>Pertanyaan yang sering diajukan</h2>
+  <div id="faqList"></div>
+  <form class="ask" id="askForm"><input id="askQ" placeholder="Pertanyaan Anda belum ada? Ketik di sini" aria-label="Pertanyaan Anda"><button class="btn" type="submit">Tanya admin</button></form>
+</div></section>
+
+<section id="info" class="wrap info">
+  <div><h2>Info toko</h2>
+    <p><strong>Jam buka:</strong> Setiap hari, 08.00–21.00 WIB</p>
+    <p><strong>Alamat:</strong> Jl. Laswi No.182, Samoja, Kec. Batununggal, Kota Bandung, Jawa Barat 40273</p>
+    <p><strong>Area antar:</strong> Bandung dan sekitarnya, maksimal 8 km</p>
+    <p><strong>Pembayaran:</strong> <span id="bayarRingkas"></span></p>
+    <p><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Jl.+Laswi+No.182+Samoja+Batununggal+Bandung+40273" target="_blank" rel="noopener">Buka di Google Maps</a></p>
+  </div>
+  <div><h2>Cara pesan</h2>
+    <ol><li>Tekan <b>Tambah</b> pada menu yang Anda mau.</li><li>Buka <b>Pesanan</b>, isi data, lalu pilih metode pembayaran.</li><li>Tekan <b>Kirim pesanan</b>. Admin membalas di WhatsApp untuk konfirmasi dan pembayaran.</li></ol>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap foot">
+    <div><strong class="foot-brand">Mie Ayam Mas Londo Jenggot</strong><p>Mie ayam hangat di Bandung. Pesan antar atau ambil sendiri di resto.</p></div>
+    <div><strong>Alamat dan jam buka</strong><p>Jl. Laswi No.182, Samoja, Kec. Batununggal, Kota Bandung, Jawa Barat 40273<br>Setiap hari, 08.00–21.00 WIB</p></div>
+    <div><strong>Hubungi kami</strong><p><a id="waFoot" href="#" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://www.google.com/maps/search/?api=1&query=Jl.+Laswi+No.182+Samoja+Batununggal+Bandung+40273" target="_blank" rel="noopener">Petunjuk arah</a></p></div>
+  </div>
+  <div class="wrap foot-bottom">© <span id="year"></span> Mie Ayam Mas Londo Jenggot. Menu, harga, jam buka, rekening, ulasan, dan nomor WhatsApp di halaman ini adalah contoh, ganti sesuai data resto.</div>
+</footer>
+
+<button class="fab" id="fab" type="button" hidden></button>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Pesanan Anda" aria-hidden="true">
+  <div class="d-head"><h2>Pesanan Anda</h2><button type="button" class="x" id="closeCart" aria-label="Tutup">Tutup</button></div>
+  <div class="d-body">
+    <ul id="lines" class="lines"></ul>
+    <p class="empty" id="empty">Belum ada pesanan. Pilih menu terlebih dahulu.</p>
+    <form id="form" novalidate>
+      <fieldset><legend>Cara terima pesanan</legend>
+        <label class="inline"><input type="radio" name="mode" value="antar" checked> Diantar</label>
+        <label class="inline"><input type="radio" name="mode" value="ambil"> Ambil di resto</label>
+      </fieldset>
+      <div><label for="nama">Nama</label><input id="nama" autocomplete="name"><p class="err" id="e-nama"></p></div>
+      <div><label for="hp">Nomor HP</label><input id="hp" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx"><p class="err" id="e-hp"></p></div>
+      <div id="alamatBox"><label for="alamat">Alamat lengkap</label><textarea id="alamat" autocomplete="street-address"></textarea><p class="err" id="e-alamat"></p></div>
+      <div><label for="catatan">Catatan (opsional)</label><input id="catatan" placeholder="Contoh: sambal dipisah"></div>
+      <fieldset><legend>Metode pembayaran</legend><div id="bayarList"></div><p class="pay-info" id="bayarInfo"></p></fieldset>
+      <dl class="sum"><div><dt>Subtotal</dt><dd id="sub">Rp0</dd></div><div><dt>Ongkir</dt><dd id="ongkir">Rp0</dd></div><div class="tot"><dt>Total</dt><dd id="total">Rp0</dd></div></dl>
+      <button class="btn block" type="submit">Kirim pesanan via WhatsApp</button>
+    </form>
+  </div>
+</aside>
+<script src="tugas1.js"></script>
+<script>
+  /* jika script.js tidak ditemukan, tampilkan petunjuk alih-alih area menu yang kosong */
+  if (!window.__londoOK) document.getElementById("grid").innerHTML = '<p class="empty">Menu gagal dimuat. Pastikan file script.js berada di folder yang sama dengan index.html, lalu muat ulang halaman.</p>';
+</script>
+</body>
+</html>
